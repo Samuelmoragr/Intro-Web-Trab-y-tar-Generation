@@ -1,0 +1,36 @@
+*{/*selector universal, para decir que todo el documento va a tener tal estilo, seleccionando todos los elementos y hacewr el cambio en todo*/
+/* alt + shift + a = atajo a insertar un comentario */
+    background-color: cornflowerblue;
+}
+/* Selectores de tipo o etiqueta: seleccionar los elementos con ese nombre */
+h1,/* podemos agregar un coma para incluir mas elementos para aplicar el formato */
+h3{
+    color: rgb(185, 238, 106);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+p{/* este tambien es un selector de etiqueta: todos los p tendran el sig formato */
+    color: #18003F;
+}
+
+/* Selector de clase: las clases si se comparten, a dif de los id que no se comparten */
+/* iniciamos con un punto "." para hacer referencia a una classe, en este caso ".tops" */
+.tops{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(27, 12, 231);
+    font-size: 30px;
+}
+/* Selector de id: Selecciona un elemento especifico y no se comparte con otros elementos, solo hara cambios para el elemento seleccionado */
+.verso{
+    color: red;
+}
+/* Selector ID: Se inicializa con un gato # */
+#verso-resaltado{
+    color: chartreuse;
+    font-size: 20px;
+}
+
+#fotobillie{
+    width: 300px;
+    height: 200px;
+}

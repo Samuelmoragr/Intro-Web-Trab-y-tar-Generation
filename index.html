@@ -1,34 +1,43 @@
 <!DOCTYPE html><!-- para mandar a llamar un borrador de codigo se usa ! -->
 <html lang="es"> <!-- Lang es un atributo de idioma, le dijimos que es en español-->
 <head>
+    <link rel="stylesheet" href="style.css"><!--para vincular mi hoja de estilos-->
     <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento, pueda leer todos los datos, como las ñ-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--un indicador de que sea responsivo, meta para indicar que esta pagina se adaptara a cualquier dispositivo-->
     <title>Samu blog</title><!---->
 
+    <style><!-- esto es un estilo interno -->
+        span{
+            color: navy;
+        }
+        .tops{
+            background-color: navy;
+        }
+    </style>
 </head>
 <body>
-    <h1> Samu blog </h1>
+    <h1 style="color: cyan; text-align: center;"> Samu blog </h1>
     <p> Bienvenidos sean a este espacio en donde contare mis historias de vida c:
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam velit blanditiis vero perspiciatis similique. Numquam neque dolorem accusamus. Reprehenderit ipsa provident quisquam ipsum nam numquam eos tempora ad incidunt enim.
     </p>
     <h2> Música, conta y programación </h2>
     <p>Poema al corrido tumbado</p><!--- elemento en bloque que ocupa todo el ancho diaponible-->
-    <span>en cuerdas vbra el alma de un soñador</span><br/><!--- elemento en línea que solo ocupa el espacio necesario para existir-->
-    <span>corrido tumbado, su sello y su clamor</span><br><!--- break nos da un salto de línea, el sigiente enlemento inicia en la sig línea-->
-    <span>de hermosillo al mundo, un eco sin final</span><br><!--Span es un contenedor generico y puede agrupar elementos que van a compartir estilos-->
-    <span>la calle y el arte en un verso sin final</span><br>
+    <span class="verso">en cuerdas vbra el alma de un soñador</span><br/><!--- elemento en línea que solo ocupa el espacio necesario para existir-->
+    <span class="verso">corrido tumbado, su sello y su clamor</span><br><!--- break nos da un salto de línea, el sigiente enlemento inicia en la sig línea-->
+    <span id="verso-resaltado">de hermosillo al mundo, un eco sin final</span><br><!--Span es un contenedor generico y puede agrupar elementos que van a compartir estilos-->
+    <span class="verso">la calle y el arte en un verso sin final</span><br>
     <hr/><!--crea una línea horizontal-->
     <div>Texto</div><!--Contenedor generico en bloque usado para dividir o agrupar en secciones-->
 
     <h3> Lista de mis cantantes favoritos </h3>
     <!--Lista desordenada ul da un frormato de lista-->
     <!--para multiplicar una etiquta x*n ej li*6-->
-    <ul>
+    <ul  ><!-- a la clase el nombre lo damos nosotros, que sea descriptivo -->
         <li>Billie Eilish</li><!--List item para incluir los elementos de la lista-->
             <ol><!--lista ordenada agrega numeros-->
                     <li>Birds of a F</li>
                     <li>Blue</li>
-                        <ul>
+                        <ul class="tops">
                             <li>Instrumental version</li>
                             <li>Acapella version</li>
                             <li>Acustic version</li>
@@ -49,7 +58,7 @@
         <dd> Algo que no se puede explicar con palabras </dd>
     </dl>
 
-    <img src="https://indiehoy.com/wp-content/uploads/2024/05/billie-eilish-cancion-nuevo-disco-la-hace-llorar.jpg" alt="Foto de Billie"> <!--src sources para adjuntar la dirección de la imagen ya sea local o online
+    <img src="https://indiehoy.com/wp-content/uploads/2024/05/billie-eilish-cancion-nuevo-disco-la-hace-llorar.jpg" alt="Foto de Billie" id="fotobillie"> <!--src sources para adjuntar la dirección de la imagen ya sea local o online
     alt agrega un texto alternativo en caso de que en la pagina no este disponible la imagen -->
     <img src="imagenes/dua-lipa_98.webp" alt="Foto de Dua Lipa" width="400" length="500"> <!--para agregar una foto localmente-->
 </body>
