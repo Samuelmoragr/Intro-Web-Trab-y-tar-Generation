@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><!-- contenido principal en sección -->
+        <h1>¡Contactanos!</h1>
+    </header>
+    <main><!-- Indica que este es el contenido principal -->
+        <section>
+            <form action=""><!-- action nos pregunta a donde mandara la información, a que base de datos -->
+                <fieldset><!-- nos permite agrupar por campos -->
+                    <legend>Datos básicos</legend>
+                    Nombre (s): <input type="text" placeholder="Blanca Adriana" required><br><!-- placeholder es como un ejemplo o marca de agua para llenar el form, ademas el required hace que un elemento sea obligatorio -->
+                    Apellidos: <input type="text" placeholder="Pérez González"><br>
+                    Correo electrónico: <input type="email" placeholder="blanca.perez@gmail.com"><br><!-- en lugar de texto podemos pedir otro dato, como email, imagen, archivo, etc. -->
+                    Télefono: <input type="tel" name="" id="" placeholder="5512345678">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del pedido</legend>
+                    <span>El número minimo de tamales para hacer un pedido por esta vía es de 20 piezas y máximo de 300 ¡Gracias por su comprensión!</span>
+                    Número de tamales: <input type="number" min="20" max="300" required><br>
+                    Fecha de entrega: <input type="date"><br>
+                </fieldset>
+                <fieldset>
+                    <legend> Datos del envio </legend>
+                    <label for="recoger-en-sucursal"><!-- para poder hacer que se elija desde el texto y no solo desde el seleccionador, semanticamente también refuerza nuestra estructura de html, dar pertenencia a sus elementos -->
+                        <input id="recoger-en-sucursal" type="radio" name="tipo-de-envio"> Recoger en sucursal
+                    </label><!-- el valor de atributo for en label, debe ser igual al valor de atributo ide en input -->
+                    <label for="envio-a-domicilio">
+                        <input id="envio-a-domicilio" type="radio" name="tipo-de-envio"> Envío a domicilio
+                    </label>
+                    <label for="delivery">
+                        <input id="delivery" type="radio" name="tipo-de-envio"> Delivery
+                    </label>
+                    <label for="punto-medio">
+                        <input id="punto-medio" type="radio" name="tipo-de-envio"> Punto medio
+                    </label> <br>
+                    <!-- name nos sirve para evitar que se puedan seleccionar muchas opciones a la vez, así solo podran seleccionar 1. Debe ser igual para todas las opciones de tipo radio -->
+                    
+                    <select name="sucursales" id="">
+                        <option value=""> Coyoacan</option>
+                        <option value=""> Ermita</option>
+                        <option value=""> Insurgentes</option>
+                        <option value=""> Neza</option>
+                        <option value=""> Ecatepec </option>
+                    </select> <br>
+
+                    <input list="sucursal">
+                    <datalist id="sucursal">
+                    <option value="Xochimilco"></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    </datalist> <br>
+
+                    <input type="checkbox" required> Acepto términos y condiciones
+                    <br>
+                    <input type="submit"> <!-- boton para enviar -->
+                </fieldset>
+
+                <button type="submit"> ¡Enviar ya! </button> <!-- se incluye el tipo de boton que sera y su leyenda -->
+            </form>
+        </section>
+    </main>
+</body>
+</html> <!-- hacer una tercera pagina, hacer un nuevo html donde este un formulario, para poderlo linkear al blog principal, 1. las listas inicio presentación 2. desarrollo sobre algun tema 3. hacer un formulario, colabs, info, sugerencias x tema -->
